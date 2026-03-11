@@ -1,0 +1,21 @@
+name: Fix Clojure Delimiters on Save
+trigger:
+  - file_saved
+  - file_pattern: "**/*.{clj,cljs,cljc}"
+
+steps:
+  - tool: fix_clojure_delimiters
+    params:
+      file_path: "${file.path}"
+      mode: "parinfer-indent"
+
+  - tool: validate_clojure_syntax
+    params:
+      file_path: "${file.path}"
+    on_error: retry_with_paren_mode
+
+  - retry_with_paren_mode:
+      tool: fix_clojure_delimiters
+      params:
+        file_path: "${file.path}"
+        mode: "parinfer-paren"
