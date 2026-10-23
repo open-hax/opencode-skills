@@ -22,9 +22,17 @@ Skills for discovering zero-cost DevSecOps infrastructure:
 | `devsecops-free-storage` | Free object storage, databases, file hosting |
 | `devsecops-free-auth` | Free authentication, authorization, identity services |
 
+### Developer Workflows
+Skills for local development and container workflows:
+
+| Skill | Purpose |
+|-------|---------|
+| `dockerfile-generator` | Generate production-ready Dockerfiles, .dockerignore files, and optional compose.yaml for 15 languages |
+
 ### Sources
 Skills are derived from:
 - [free-for-dev](https://github.com/ripienaar/free-for-dev) - Free tier infrastructure catalog
+- [dockerfile-generator-skill](https://github.com/rafaabou/dockerfile-generator-skill) - Portable Dockerfile generation skill
 
 ## Installation
 

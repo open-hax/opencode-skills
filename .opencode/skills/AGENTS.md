@@ -91,6 +91,9 @@ This directory contains the skill definitions for the OpenCode agent system.
 - testing-typescript-vitest
 - testing-unit
 
+### Docker
+- dockerfile-generator
+
 ### DevSecOps
 - devsecops-free-auth
 - devsecops-free-cicd

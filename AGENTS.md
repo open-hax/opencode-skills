@@ -29,6 +29,10 @@ Skills for discovering free DevSecOps infrastructure:
 - `devsecops-free-storage` - Object storage, databases
 - `devsecops-free-auth` - Authentication, authorization
 
+### Docker and Container Workflows
+
+- `dockerfile-generator` - Generate production-ready Dockerfiles, .dockerignore files, and optional compose.yaml for 15 languages
+
 ## Usage
 
 Invoke skills through OpenCode:
